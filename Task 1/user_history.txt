@@ -1,0 +1,48 @@
+    1  history
+    2  sudo apt list | grep -i python3.10
+    3  sudo apt remove python3.10
+    4  python3.10 --version
+    5  wget https://www.python.org/ftp/python/3.10.16/Python-3.10.16.tgz
+    6  tar -xvzf Python-3.10.16.tgz
+    7  cd Python-3.10.16
+    8  ./configure --enable-optimizatons
+    9  make
+   10  sudo make altinstall
+   11  sudo apt update
+   12  sudo apt install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev curl  
+   13  make clean
+   14  ./configure --enable-optimizatons
+   15  make
+   16  sudo make altinstall
+   17  python3.10 --version
+   18  curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+   19  python3.10 get-pip.py
+   20  mkdir ~/CS203-Lab3
+   21  cd CS203-Lab3
+   22  cd ~/CS203-Lab3
+   23  python3.10 -m venv myenv
+   24  source myenv/bin/activate
+   25  pip install label-studio
+   26  pip install --upgrade pip
+   27  label-studio --version
+   28  pip install label-studio
+   29  label-studio --version
+   30  sudo apt-get update
+   31  sudo apt-get install sqlite3 libsqlite3-dev
+   32  deactivate
+   33  sudo apt-get update
+   34  sudo apt-get install sqlite3 libsqlite3-dev
+   35  cd~/Python-3.10.16
+   36  cd ~/Python3.10.16
+   37  cd ~/Python-3.10.16
+   38  make clean
+   39  ./configure --enable-optimizatons
+   40  make
+   41  sudo make altinstall
+   42  source myenv/bin/activate
+   43  cd ~/CS203-Lab3
+   44  source myenv/bin/activate
+   45  pip install label-studio
+   46  pip show label-studio
+   47  cd
+   48  history > user_history.txt
